@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.fruits {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.fruits h1 {
+  font-size: 32px;
+  color: #ff6f61;
+  margin-bottom: 30px;
+}
+
+.fruit-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fruit-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 180px;
+}
+
+.fruit-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fruit-card h3 {
+  color: #ff6f61;
+  margin-bottom: 5px;
+}
+
+.fruit-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .fruit-card {
+    width: 90%;
+  }
+}

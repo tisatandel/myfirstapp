@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact h1 {
+  text-align: center;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Website Details */
+.website-details {
+  margin-bottom: 30px;
+}
+
+.center-logo {
+  text-align: center;   /* Fruit Basket center mein */
+  color: #ff6f61;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.website-details ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;   /* details bhi center aligned */
+}
+
+.website-details li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-form button:hover {
+  background-color: #e85c50;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+    padding: 20px;
+  }
+}
