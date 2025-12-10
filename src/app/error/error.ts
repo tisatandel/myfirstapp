@@ -8,5 +8,5 @@ import { Router, RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './error.css',
 })
 export class Error {
-
+ 
 }
