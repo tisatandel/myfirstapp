@@ -10,7 +10,7 @@ import { Router } from "@angular/router";
 export class Error {
  constructor(private router: Router)
  {}
- 
+//  protected readonly router = inject(Router);
  goHome()
  {
   this.router.navigate(['/main']);
