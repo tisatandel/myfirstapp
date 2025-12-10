@@ -3,10 +3,16 @@ import { Router, RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-error',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [],
   templateUrl: './error.html',
   styleUrl: './error.css',
 })
 export class Error {
+ constructor(private router: Router)
+ {}
  
+ goHome()
+ {
+  this.router.navigate(['/main']);
+ }
 }

@@ -11,7 +11,10 @@
     <h1>404</h1>
     <h2>Oops! Page Not Found</h2>
     <p>The page you are looking for might have been removed or does not exist.</p>
-    <a routerLink="main" routerLinkActive="active" class="home-btn">Go Back Home</a>
+
+    <!-- Updated: Angular button -->
+    <button class="home-btn" (click)="goHome()">Go to Home</button>
+
   </div>
 </body>
 </html>
