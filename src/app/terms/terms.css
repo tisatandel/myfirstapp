@@ -1,0 +1,14 @@
+.page {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  color: #ff6f61;
+  text-align: center;
+}
+p {
+  color: #333;
+  text-align: center;
+}
