@@ -7,10 +7,6 @@ import { Error } from './error/error';
 import { Privacy } from './privacy/privacy';
 import { Terms } from './terms/terms';
 import { Support } from './support/support';
-import { Login } from './login/login';
-import { Admin } from './login/admin/admin';
-import { Customer } from './login/customer/customer';
-import { Supplier } from './login/supplier/supplier';
 export const routes: Routes = [
     {
     path:'main',component:Main
@@ -34,23 +30,9 @@ export const routes: Routes = [
     path:'support',component:Support
     },
     {
-    path:'login',component:Login,
-    children:[
-     {
-    path:'admin',component:Admin
-    },   
-    {
-    path:'customer',component:Customer
-    },
-    {
-    path:'supplier',component:Supplier
-    },
-    {
-        path:'',
-        redirectTo:'admin',
-        pathMatch:'full'
-    }
-    ]
+    path:'login',
+    loadChildren:()=>import('./login/login.routes').then(m=>m.loginRoutes)
+    
     },
     {
         path:'',

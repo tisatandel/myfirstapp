@@ -1,0 +1,73 @@
+.gallery-container {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-container h1 {
+  color: #ff6f61;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.gallery-container p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.gallery-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-card {
+  background: #fff8f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-card h3 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.gallery-card p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.gallery-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-fruit {
+  background-color: #ff6f61;
+}
+.btn-fruit:hover {
+  background-color: #e85c50;
+}
+
+.btn-customer {
+  background-color: #4caf50;
+}
+.btn-customer:hover {
+  background-color: #3d8b40;
+}
+
+.btn-farm {
+  background-color: #2196f3;
+}
+.btn-farm:hover {
+  background-color: #1976d2;
+}
