@@ -1,23 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Supplier Login</title>
-  <link rel="stylesheet" href="supplier-login.css" />
-</head>
-<body>
-  <div class="login-container">
-    <h1>Supplier Login</h1>
-    <form>
-      <label for="supplier-username">Supplier ID</label>
-      <input type="text" id="supplier-username" placeholder="Enter Supplier ID" required />
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: #007bff solid 1px;
+  width: 320px;
+  margin: 80px auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-      <label for="supplier-password">Password</label>
-      <input type="password" id="supplier-password" placeholder="Enter Password" required />
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
 
-      <button type="submit">Login</button>
-    </form>
-  </div>
-</body>
-</html>
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}

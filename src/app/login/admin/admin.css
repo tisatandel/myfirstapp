@@ -2,6 +2,7 @@
   background: white;
   padding: 30px;
   border-radius: 10px;
+  border: solid 1px #ff9800 ;
   width: 320px;
   margin: 80px auto;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
@@ -9,7 +10,7 @@
 }
 
 h1 {
-  color: #ff6f61;
+  color: #ff9800;
   margin-bottom: 20px;
 }
 
@@ -27,7 +28,7 @@ input {
 
 button {
   padding: 12px;
-  background: #ff6f61;
+  background: #ff9800;
   color: white;
   border: none;
   border-radius: 5px;
@@ -35,5 +36,5 @@ button {
 }
 
 button:hover {
-  background: #e85c50;
+  background: #e68900;
 }
