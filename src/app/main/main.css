@@ -28,6 +28,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.hero button:hover {
+  background-color: #e85c50;
+  transform: scale(1.05);
 }
 
 .fruit-grid {
@@ -45,6 +52,13 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
   width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.fruit-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .fruit-card img {
@@ -54,6 +68,12 @@ body {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom on hover */
+.fruit-card:hover img {
+  transform: scale(1.1);
 }
 
 /* Mobile view */
@@ -65,4 +85,131 @@ body {
   .fruit-card {
     width: 90%;
   }
+}
+.welcome-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff8f0;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+.welcome-card img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  border: rgba(255, 0, 13, 0.623) solid 4px;
+  object-fit: cover;
+}
+
+.welcome-text {
+  max-width: 500px;
+}
+
+.welcome-text h2 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.welcome-text ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.welcome-text ul li {
+  margin-bottom: 8px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .welcome-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome-card img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #ffe5d9;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.info-card h3 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-card {
+    width: 90%;
+  }
+}
+
+.info-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffe5d9, #fff8f0);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-section h2 {
+  font-size: 28px;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 16px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
 }

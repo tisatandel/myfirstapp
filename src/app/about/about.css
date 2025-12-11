@@ -38,6 +38,13 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
   width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.about-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .about-card img {
@@ -46,6 +53,12 @@ body {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom on hover */
+.about-card:hover img {
+  transform: scale(1.1);
 }
 
 .about-card h3 {
@@ -65,6 +78,6 @@ body {
     align-items: center;
   }
   .about-card {
-    width: 90%;
+    width: 90%; 
   }
 }
