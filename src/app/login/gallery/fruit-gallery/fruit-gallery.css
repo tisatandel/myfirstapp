@@ -1,34 +1,58 @@
 .page-header {
   text-align: center;
-  padding: 32px 16px;
+  padding: 20px 10px;
   color: #ff6f61;
 }
 
+.page-header h1 {
+  margin: 0 0 8px;
+}
+
+.page-header p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Compact grid layout */
 .gallery {
   display: grid;
-  gap: 20px;
-  padding: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* smaller cards */
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform .25s ease;
+  transition: transform .2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: 120px;              /* fixed smaller height */
+  object-fit: cover;          /* crop neatly */
 }
 
 .card-info {
-  padding: 12px;
+  padding: 8px;
+}
+
+.card-info h3 {
+  margin: 0 0 4px;
+  font-size: 14px;            
+}
+
+.card-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
 }
