@@ -7,6 +7,10 @@ import { Error } from './error/error';
 import { Privacy } from './privacy/privacy';
 import { Terms } from './terms/terms';
 import { Support } from './support/support';
+import { Gallery } from './login/gallery/gallery';
+import { FruitGallery } from './login/gallery/fruit-gallery/fruit-gallery';
+import { CustomerStories } from './login/gallery/customer-stories/customer-stories';
+import { FarmGallery } from './login/gallery/farm-gallery/farm-gallery';
 export const routes: Routes = [
     {
     path:'main',component:Main
@@ -33,6 +37,16 @@ export const routes: Routes = [
     path:'login',
     loadChildren:()=>import('./login/login.routes').then(m=>m.loginRoutes)
     
+    },
+    {
+        path: '',
+        component: Gallery,
+        children: [
+          { path: 'fruit-gallery', component:FruitGallery  },
+          { path: 'customer-stories', component: CustomerStories},
+          { path: 'farm-gallery', component: FarmGallery},
+          { path: '', redirectTo: 'fruit-gallery', pathMatch: 'full' }
+        ]
     },
     {
         path:'',
