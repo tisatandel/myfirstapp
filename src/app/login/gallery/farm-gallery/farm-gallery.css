@@ -1,7 +1,8 @@
 .page-header {
   text-align: center;
   padding: 32px 16px;
-  color: #28a745;
+  color: #007bff ;
+  font-size: 18px;
 }
 
 .gallery {
@@ -26,6 +27,6 @@
 
 figcaption {
   padding: 10px;
-  font-size: 13px;
-  color: #555;
+  font-size: 20px;
+  color: #f24242;
 }

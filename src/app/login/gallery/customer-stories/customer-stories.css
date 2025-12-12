@@ -1,7 +1,8 @@
 .page-header {
   text-align: center;
   padding: 32px 16px;
-  color: #007bff;
+  color: #28a745;
+  font-size: 18px;
 }
 
 .stories {
@@ -23,7 +24,7 @@
 .avatar img {
   width: 64px;
   height: 64px;
-  border-radius: 50%;
+  border-radius: 60%;
   object-fit: cover;
 }
 

@@ -11,50 +11,29 @@ import { Gallery } from './login/gallery/gallery';
 import { FruitGallery } from './login/gallery/fruit-gallery/fruit-gallery';
 import { CustomerStories } from './login/gallery/customer-stories/customer-stories';
 import { FarmGallery } from './login/gallery/farm-gallery/farm-gallery';
+
 export const routes: Routes = [
-    {
-    path:'main',component:Main
-    },
-    {
-    path:'about',component:About
-    },
-    {
-    path:'fruits',component:Fruits
-    },
-    {
-    path:'contact',component:Contact
-    },
-    {
-    path:'privacy',component:Privacy
-    },
-    {
-    path:'terms',component:Terms
-    },
-    {
-    path:'support',component:Support
-    },
-    {
-    path:'login',
-    loadChildren:()=>import('./login/login.routes').then(m=>m.loginRoutes)
-    
-    },
-    {
-        path: '',
-        component: Gallery,
-        children: [
-          { path: 'fruit-gallery', component:FruitGallery  },
-          { path: 'customer-stories', component: CustomerStories},
-          { path: 'farm-gallery', component: FarmGallery},
-          { path: '', redirectTo: 'fruit-gallery', pathMatch: 'full' }
-        ]
-    },
-    {
-        path:'',
-        redirectTo:'main',
-        pathMatch:'full'
-    },
-    {
-    path:'**',component:Error
-    }
-    
+  { path: 'main', component: Main },
+  { path: 'about', component: About },
+  { path: 'fruits', component: Fruits },
+  { path: 'contact', component: Contact },
+  { path: 'privacy', component: Privacy },
+  { path: 'terms', component: Terms },
+  { path: 'support', component: Support },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.routes').then(m => m.loginRoutes)
+  },
+  {
+    path: 'gallery',
+    component: Gallery,
+    children: [
+      { path: 'fruit-gallery', component: FruitGallery },
+      { path: 'customer-stories', component: CustomerStories },
+      { path: 'farm-gallery', component: FarmGallery },
+      { path: '', redirectTo: 'fruit-gallery', pathMatch: 'full' }
+    ]
+  },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
+  { path: '**', component: Error }
 ];
