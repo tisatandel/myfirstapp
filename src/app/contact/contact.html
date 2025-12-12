@@ -13,13 +13,12 @@
 
     <!-- Website Details -->
     <div class="website-details">
-      <h2 class="center-logo">🍓 Fruit Basket</h2>
-      <p>Your one-stop shop for fresh, organic, and seasonal fruits.  
-      We deliver farm-fresh fruits directly to your doorstep, ensuring quality and taste in every bite.</p>
+      <h2 class="center-logo">{{siteName}}</h2>
+      <p>{{siteDescription}}</p>
       <ul>
-        <li>📍 <strong>Address:</strong> 123 Green Market Road, Valsad, Gujarat, India</li>
-        <li>📞 <strong>Phone:</strong> +91 98765 43210</li>
-        <li>📧 <strong>Email:</strong> support@fruitbasket.com</li>
+        <li>📍 <strong>Address:</strong> {{address}}</li>
+        <li>📞 <strong>Phone:</strong> {{phone}}</li>
+        <li>📧 <strong>Email:</strong> {{email}}</li>
       </ul>
     </div>
 
@@ -33,9 +32,15 @@
 
       <label for="message">Message</label>
       <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
-
       <button type="submit">Send Message</button>
+      
     </form>
   </section>
 </body>
+<img [src]="ImageUrl" alt="Fruit Basket logo" style="width: 200px; height: 200px;">
+  <label for="name">Name</label>
+  <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="Enter your name" required>
+  <p>{{name}}</p>
+  <h2>{{emailInput()}}</h2>
+  
 </html>
