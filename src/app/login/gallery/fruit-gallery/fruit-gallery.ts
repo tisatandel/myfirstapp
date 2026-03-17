@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './fruit-gallery.css',
 })
 export class FruitGallery {
-
 }

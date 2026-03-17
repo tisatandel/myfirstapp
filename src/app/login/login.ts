@@ -8,5 +8,4 @@ import { RouterLink, RouterOutlet } from "@angular/router";
   styleUrl: './login.css',
 })
 export class Login {
-
 }

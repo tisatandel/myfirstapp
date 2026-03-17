@@ -5,7 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap; 
 }
 
 .logo {

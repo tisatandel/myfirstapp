@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './support.css',
 })
 export class Support {
-
 }

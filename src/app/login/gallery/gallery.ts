@@ -8,5 +8,4 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './gallery.css',
 })
 export class Gallery {
-
 }
